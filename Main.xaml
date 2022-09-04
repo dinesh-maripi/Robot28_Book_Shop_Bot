@@ -1,0 +1,337 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="775,2363" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="70">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence: Main" sap:VirtualizedContainerService.HintSize="476,2298" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="BooksDT" />
+      <Variable x:TypeArguments="scg:List(sd:DataTable)" Name="list_BookDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[BooksDT]" DisplayName="Build Data Table: BooksDT" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Shop_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Books_x0020_Sold&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Book_x0020_Name&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Month&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Filter="*.txt" Folder="C:\Users\dinesh\Desktop\UiPath\Book_Shop_Bot\Data\Monthly Data" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,402" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="FileText" />
+              <Variable x:TypeArguments="s:String[]" Name="BookRecords" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadTextFile File="{x:Null}" Content="[FileText]" DisplayName="Read Text File: " FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,100" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="s:String[]">[BookRecords]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="s:String[]">[FileText.Trim.Remove(0, FileText.IndexOf("Books Sale")+"Books Sale".Length+1).Split(new String() {Environment.NewLine}, StringSplitOptions.None)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[BookRecords]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473,510" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="BookName" />
+                      <Variable x:TypeArguments="x:String" Name="SalesCount" />
+                      <Variable x:TypeArguments="x:String" Name="ShopName" />
+                      <Variable x:TypeArguments="x:String" Name="Month" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign.AssignOperations>
+                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[BookName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[item.Trim.Split("|"c)(0)]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[ShopName]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[Path.GetFileNameWithoutExtension(CurrentFile.ToString)]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[SalesCount]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[item.Trim.Split("|"c)(1)]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                            <ui:AssignOperation.To>
+                              <OutArgument x:TypeArguments="x:String">[Month]</OutArgument>
+                            </ui:AssignOperation.To>
+                            <ui:AssignOperation.Value>
+                              <InArgument x:TypeArguments="x:String">[Date.Now.AddMonths(-1).ToString("MMM yyyy")]</InArgument>
+                            </ui:AssignOperation.Value>
+                          </ui:AssignOperation>
+                        </scg:List>
+                      </ui:MultipleAssign.AssignOperations>
+                    </ui:MultipleAssign>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ShopName, SalesCount, BookName, Month}]" DataTable="[BooksDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431,185" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachFileX>
+    <Assign sap2010:Annotation.AnnotationText="Split BooksDT into list_BooksDT group by Book Name using Linq query" DisplayName="Assign: list_BookDT" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(sd:DataTable)">[list_BookDT]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(sd:DataTable)">[BooksDT.AsEnumerable().GroupBy(Function(row)row.Field(Of String)("Book Name")).Select(Function(g) g.CopyToDataTable()).ToList]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each: BookDT" sap:VirtualizedContainerService.HintSize="434,687" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[list_BookDT]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="sd:DataTable">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataTable" Name="BookDT" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,563" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="SheetName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap2010:Annotation.AnnotationText="Each SheetName represents a BookName" DisplayName="Assign: SheetName" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[BookDT.Rows(0)(2).ToString]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Book Name" DataTable="[BookDT]" DisplayName="Remove Data Column: Book Name" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:RemoveDataColumn>
+            <ui:WriteRange AddHeaders="True" DataTable="[BookDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[SheetName]" WorkbookPath="output.xlsx">
+              <ui:WriteRange.StartingCell>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:WriteRange.StartingCell>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:WriteRange>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEach>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Edge: https://botsdna.com/BookShop/" sap:VirtualizedContainerService.HintSize="434,1114" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="385aa690-66fc-4144-8920-776f47688808" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,898" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click: Choose File" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="385aa690-66fc-4144-8920-776f47688808" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://botsdna.com/BookShop/" DesignTimeRectangle="704, 354, 253, 21" ElementType="InputBox" FriendlyName="'INPUT imageFile'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='file' tag='INPUT' class='' aaname='' /&gt;" Guid="4ae351da-cd0f-4e96-be8d-9cd49b80a025" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQEAAAAZCAYAAAAxHpu/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPpSURBVHhe7Zw9buMwEIV1QQOBgdxkkSJwsQh8BVdO6xzCgdsE2D6F6xQucwQu/znDP1GWtJDX7wMG65AihxL8HodawJ0AANw1MAEA7hxvApfLRex2O/H09ISYKNTzVM8VgCXjTUB9YU+nk/j5+UFMFOp5qucKwJLxJqB2rtwXGTEu1HMFYMnABGYOmABYOjCBmQMmAJbOYBM4v65E13U+Vq9n0n8W+4e4bVlxfA5rZ/F8lP10/dPcS9YEvg9iLXOu3+KXhh9i263F4dv+OYiLODzae/n1W85v59G5rp2zwOdW5tnK1YL/gUEmYAS0EUffdhQb+aULQrkRE9CCz/X/WxNIhTTCBKgwqfBhAqCHdhP42otVtxL7r6j9fUOM4dZNgMbcJrAWa7Vzv1ApjTSBx4OsByJgAqCHZhPQx4CHvThn+kI44ex1hWBKbVo5RMeJZD5TWbj+zTvp02bj+mIzqoyLYkwlwI4STUZSN4HDp/q3E9tP254xgY8XkpMZBkGL0l0nx/8hwk9MQOUIc4bcebL5rQkc3ta+Lz7aFNet1xP64vzFcTbnlvSnxylwDc0m0LaDGuHElYEfl6kawpyR6PS1TuxK5ET4qs8bSDSuVLHYYEJ2kZ2Lz8tNMMpZiaoJSGFelJD8Ds5NIO2rfPHp7kyFz0zAvDfwcyQGweH5yVhrOn4e/XfLus0cXvg6f6goivkUPTnB9cxiAlQcdFwyBzWFRLx0LrvT5/LrcbzaUHlKAq3fR8kEzOekMumtjPpNgH/ZqQlEIpBwkUS0mEAkOoXaeWmOQJrfQ3MpivdjCOs2ffl7MH2sMlB53LXVnGAMMx0HciaQ9jEToJ91xNfzkt8LWY8j7XF/FNeZQJTbBzefXPSbgMTvatQEzA5KRTHaBPQ1mfvIHjPS/J6qIPvWbY3A5fbtZhxblw6bByYwG+NfDLL2mglkBNhcCbg2G/pauzNnKoFaTFYJNEaTCUj0WfhFnnl9e21HzdBiAvozEVKVNL+nKsgh6zbCN9dmKgEKTGA22k1AhhZQZrcOokqFy0THdvuesfpaawqJQdB3BHFOs2vTNdC4zgTSSkjPM8lxwOF2wtDOxUMFk6HFBBKB1ueMxWuMSmboEWR53eZzEDoXfjaf+xsmMBuDTEAFe7svg4stFmQqumn+dyDOWzgqZOJaE1Chx/o8bdVHuwlYEUTtxbflMU0moHBm0zCnhOUfIMjiuvW1hT4JG0dzwARmY7AJIIZF1gQAWBAwgZkDJgCWDkxg5oAJgKUDE5g5YAJg6XgTwC8LTR/4ZSFwC3gTwG8MTh/qeeI3BsHS8SYAALhPYAIA3DVC/AUynCcHeX6luQAAAABJRU5ErkJggg==" InformativeScreenshot="61d12603a1a882ab3130ad1f475dd98e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/BookShop/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="499, 353, 202, 23" ElementType="Text" FriendlyName="'Upload Previous'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Upload Previous Month Sales : ' check:innerText='Upload Previous Month Sales :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM4AAAAbCAYAAAA07LBYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASlSURBVHhe7VntbeMwDM2MBm6hIKskC9wOziD90TF8JEVJ/JAcS016SMsHCIgtiR+PfJKLnrZAIDCMEE4gMIEQTiAwgRBOIDCBEE4gMIEQTiAwgRBOIDCBKpz7ZTudTmJctpWntu1zu/4Rc3+u8OYAyKa080ys2wViudz5UcLlkseyXT94zavwcd2W7/AjofLd53s9Vz6W26EqDuPztjyMwyLt4diov6C+56MWdnrhRTA3TgqgSygU6DDZpZivEE6KE+33yUpir/Fm8X9zU38b6uHW5YRE/VoOqgAG6k69ImLKcR4SzpFeeD6McGyzGUCCQ8ERIf/hxiE0chkqyLsB8j1DfVA8nS8CvG0usObpNQFeL4Ln0RuHbkFXE6jv+9w4P1w4vOfwp+ZbAYUDeRHnLV4wd6jF02vieR4VTlr/lVvwzYSTTwr5faqCbxWJC5tHs7HL6O+93CeEY28csgcFu7HdIigdR/KR7OV32W7JPe8dybm8z01T/da88jtcA7+7pzALJ8dpDgeMk/y24jP56r1pDvfWOnO85dMvj/Q+rUMfwu7u7SHW9Q4166sRo+4FnZOcy3/nYU4r3MBdRimPXBuNSeG0mygFJBzZIjWfzf5CcC0YgYirtldsBJjXZEnYXGrMtId901BFRb8iRuOXyDRNsIKICcXm8ZzTsyyObgLkRHH+UDgA9lG5wb0cg43H+MvPqTH5N48Us40jrak8M0e0R/psN2BFrQ8NlWea073gY9bPIkdZQ4yFbVeBj+MLN44lEGFIVEVq2yax2FNGnC55Pa5Tex15FqYQPNT6RkFr0fWovk1R4NfqbA7k7GLQTdDkpwnwlYXDfktt0If8LeKnfK19FZOpKYBiKnX3864hzeGzj2SPeG/lTbGleS2U+rxbQ8f3HJ4sHLNfFckTjNAkM2lEmLTV2qvJ8niQC6JBIsWjcvKQIv68XTl2xmjOLgaTlzhE9gsO+RbhZB+4HnkQ+1R8KRfXoOpQ8jk8WziOQ0Cy0eCB/Nra6+f9Gqa+UGKagBEOk9I54dazTJ4DUAGahFSReL2xTUk6odCMeD7gy8Haa6AnnE7+BSWvFf4+MiuHcga4GHp5pfd98YAvIZyyHkSzSP8qPo7F2lSNnuxIHp8vnKWbb3ovfyP2nw/VEEB5mNiPwgknEeuNabIQ3BS2CK5IgjBnWyZsxMEnTF6bimHIgWf5TsPYa8E1LSLFpPZBLFflI9le4O8G1wxDOQM4z15e+rDCvb0GxJhEswIsZwSXM+cr6vZIGHqeucD5O/AEdpPfMeHYOLUNEwNzWtfbGDmnVg1hr81FPh+FFw6Ci5kLSMM1YG5M+Hwr6wRZnFwavpHy8GTxHDQB/U8Cf7PvfELgWOB6R7+qKTKMDxVXRi8+hM2/cXpRrPb9RM6IvbxQOEvmgeYbRe7ahwYqMXK9xDrXaHkY0cj1Mtacf3kH+1QNkXfDZate+VNN2TY1U3Oi55bbXxcjoVdD4GqBW9i9byDl0hZ8WziHkIXjWjIQ+PEI4QQCE5gUjrn2QzyBX4Yv3DiBwO9FCCcQmEAIJxCYQAgnEJhACCcQmEAIJxAYxrb9A3lgaUpeQYC5AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: File &amp;name" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="385aa690-66fc-4144-8920-776f47688808" Text="[&quot;C:\Users\dinesh\Desktop\UiPath\Book_Shop_Bot\output.xlsx&quot; + &quot;[k(enter)]&quot;]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="201, 449, 199, 15" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="011afd85-808c-4b37-985d-b094e8ddf183" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMsAAAATCAYAAAA+lvlxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABHSURBVGhD7dOBAAAADASh+Uv/FA6gHLoBiSwQyQKRLBDJApEsEMkCkSwQyQKRLBDJApEsEMkCkSwQyQKRLBDJApEsEMkCyfa5lAtBQTGsIQAAAABJRU5ErkJggg==" InformativeScreenshot="c203b540243bacee78c19c28f0a04d46.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="138, 448, 54, 15" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEASURBVFhH7VPRFcMgCHQq52EbhnEXZ3EDKokmaIkmTT8a68e9hwaOuwgmhED/gGl0NEyjo0EYdQTGkBGw6Cl4JGssoc85OX4WKqM9E9Poz+OEUXlf5SxjnUcdyBV1jJSPUK5D+u5gXxMDrqxxOze4QB6tyqFqcLGfRfI5J6K5o9zg2KiMIyJ5IUByZhMsoPVDNt5Yk4UuNcJcwXGggXPaRkWRei/i4k8mbK+i1SrnZGKF0qPHcUrDiptGtdeR6InM9Z7QKj0ucbRxY0c5rvblDTWnOMvxWgRrPXpnjhUNXx1d/laPzqXR5VdMdRYIPnlRPmsa2kbHxjQ6GqbRsRDoBaFqBwMxkChkAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click: Submit" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="385aa690-66fc-4144-8920-776f47688808" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://botsdna.com/BookShop/" DesignTimeRectangle="706, 383, 80, 28" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='button button1' aaname='Submit' check:innerText='Submit' /&gt;" Guid="17c5f025-b89c-45ff-b551-3b24e9a4ecd6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAgCAYAAACM2F8WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7ZZLbsIwFEW7QAbdIGIJncMq8A4ShsxQRkxe/ff1s0MT+pBo+q50FOHYxj7+KB+kEY0KFU4Wuvv6VJ4Eo0IFwKhQATAqVACMChUAo0IFwKhQATCiQo+32BlkHPp15znRaNtN10Pn3e/YXyeiu6F9KjOGptupqbcWjJDQA53vthMcrMMN2Bavk/M6oTVxzG8p1Iub6Gzad35X0IWOrHweFUq74WJ76AvlNMfOUbVPQo1/ptSCQ51xCM8cL6cuwyun/Ddrt2rBWzBCR74M8KedtVSoS5bRXB2pTlnEcBJ6Zex3/u933qEevuou7covFsomGuSk/jp1evd1LEsL88eEAl4QBAa9VGjzdVDd06FO/xpIvy2bEQqET6m5YxdRoSt4OKnIEqGdOpsV6nchl5SodlacFLtbQ9kjWbzdxoWmgfcG52Vjebxf88RTWybUhdcpArcu1BMHyFJNMBJ2W4rddX7i/MgXsS51PxJCLXFxy2I+B+b1d+g/AKNCBcCoUAEwKlQAjAoVAKNCBcCoUAEwKlQAjAoVAJOFamSiQkVD9A3gdKmPL66OvgAAAABJRU5ErkJggg==" InformativeScreenshot="8818f3c29b7a0127ad8dfccc8790100a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/BookShop/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click: OK" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="385aa690-66fc-4144-8920-776f47688808" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="872, 152, 64, 32" ElementType="Button" FriendlyName="'push button OK'" FullSelectorArgument="&lt;ctrl name='botsdna.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='botsdna.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' /&gt;" Guid="e29829a5-512a-48e8-9153-a1b9250233b6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAkCAYAAAAw55zoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFoSURBVGhD7ZqxagJBEIbtfRqfInC9TyBYpUnnK+QBAnkBuzTWCWlCKgtDmlgYMISAISRIAlEisvJvmHP971JY3Bi4f+BDd3aa+dydE7SRZVkQWySEyIW02ieh2b0IjePrWoGe0XtBSB1lGOi9IKSssE5ICCEhhIQQEkJICCEhhIQQEkIcRMjV+CPMv1cBsVyt4zrdR1ju6Owu1k7fFzs1VeEu5PZxnks4vXwK/eEsrkfPX3lNKgR57EOM7VeJq5BO/yE2Cwlp/vzmJeZ7g0lcIyDE8hCX1leJq5DB/VtssGwPgX17byfDcl64CsGnjijbQ9g1QUAGwuuqGK5C9jkhmDWew9RwFYIZgfhrhmDGYI3AabF6OzkeuAoBNhsgJX3K4ERYTSrBrpnXYHUXAtCkfQ/BK58ARJp7/fxxe/QeRMh/RkIICSEkhJAQQkIICSEkhJAQQkKIghD92E1C9HcIEiJ+kZAdsrABkcC0A9gxrTUAAAAASUVORK5CYII=" InformativeScreenshot="2b60586a1ad99d26caa87e5dc575ac29.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='https://botsdna.com/BookShop/ and 2 more pages - Personal - Micr*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="504, 75, 448, 125" FriendlyName="'SUCCESS: File'" FullSelectorArgument="&lt;ctrl name='botsdna.com says' role='dialog' /&gt;" FuzzySelectorArgument="&lt;ctrl name='botsdna.com says' role='dialog' automationid='' check:fulltext='SUCCESS: File Uploaded Successfully....' /&gt;" ImageBase64="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O83WrVvVCwEAWOok4yTrJPM+/fRTl4GShb1Tp065R8Vjx465lDxw4IB57bXXzCuvvGJefvlls2fPHvPSSy+ZF1980V0sT5LPPfdc8Oyzz5pnnnnGPP30085TTz1V8eSTTwZPPPFE8Pjjjycee+wx4Izt3r3brFixwpx33nmm1+u5X6+44grz4IMPqv1zjz76qHnkkUfc1zLWPffcYy666CJz/vnnu/Hk12uvvdad83zfeIxLLrkkmcOaNWuSa+L+nhzbvn27ufDCC80FF1wQ7jk2Nmbuv/9+Nw957d19993huvhX//X4+HhyzZVXXmkefvhhNz/fJ7/Gfx176KGH3B76+ch6rrvuujAOcLbyHIgzIs4OLVt87kgGSRbF2SRZJZkl2SUZJlkmmSbZJhknWSeZJ9knGShZ2Dt9+rRLRknIr776yhw9etR8+eWX5siRI+bw4cPm888/N4cOHTKfffaZOXjwoOn3+y5RP/nkE/dUKT766CPnww8/dD744APz/vvvO/KzWfHuu+8GMpHYO++8A5yVt99+29m8eXMSRldddZX78GvXaF5//fXw69VXXx3GkZCSrx944AF3H+mzf/9+96t/Ld566y1z2WWXub7e5ORkOO/7x9f4Y/LrsmXLwnUSjpdffrkLsosvvjisS+zatUsdy399zTXXhP4ydwlWOf7mm29W+mric6tXr06+KZD1vfrqq+6c3wPgbOW5EGeGzxGfK5IxPm98/vg8kmySjJKsksyS7JIMkyyTTJNsk4yTrJPM80+Hp0+fNv8H3rELDwNCaNkAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1456, 876" BrowserType="Edge" IconBase64="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" InformativeScreenshot="53a2999f090d60d2b8d7d4c4a408a115.png" Selector="&lt;html app='msedge.exe' title='https://botsdna.com/BookShop/' /&gt;" Url="https://botsdna.com/BookShop/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
